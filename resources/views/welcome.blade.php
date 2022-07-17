@@ -41,19 +41,19 @@
             <div class="container" id="cards">
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
-                        <div class="card">
+                        <div class="card cuadros">
                             <img class="money" src="{{ URL('img/botones/money.png') }}" alt="">
                             <h3 class="text-center ti1"> Con un pequeño Monto </h3>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <div class="card">
+                        <div class="card cuadros">
                             <img class="money" src="{{ URL('img/botones/reloj.png') }}" alt="">
                             <h3 class="text-center ti1"> Tu dinero se Multiplicara </h3>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <div class="card">
+                        <div class="card cuadros">
                             <img class="money" src="{{ URL('img/botones/bolsa.png') }}" alt="">
                             <h3 class="text-center ti1"> Retira tus Ganancias </h3>
                         </div>
