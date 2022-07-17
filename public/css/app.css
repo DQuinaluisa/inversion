@@ -1,0 +1,86 @@
+nav{
+    background: linear-gradient(-45deg, rgb(231, 202, 106), rgb(255, 255, 255));
+}
+
+.cuadro {
+    background: linear-gradient(90deg, rgb(62, 184, 233), rgb(255, 255, 255));
+}
+
+.titulo {
+    padding-top: 8%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 500%;
+
+}
+
+
+.texto {
+    padding-left: 15%;
+    padding-top: 5%;
+    font-size: 200%;
+    font-weight: 600;
+    font-family: 'Saira Condensed', sans-serif;
+
+}
+
+.crece {
+    padding-top: 4%;
+    font-family: 'Caveat', cursive;
+    color: rgb(80, 80, 80);
+}
+
+hr {
+    height: 4%;
+    width: 50%;
+    background-color:  rgb(62, 184, 233);
+}
+
+#cards {
+    padding-top: 2%;
+}
+.card {
+    background-color: #F5B041;
+    border-radius: 15px;
+    box-shadow: 2px 6px 8px rgb(56, 56, 56);
+    border-style: none;
+    -webkit-transition: background-color 1s linear;
+    transition: background-color 1s linear;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #1F618D;
+    cursor: pointer;
+  }
+
+
+.money {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.ti1 {
+    font-family: 'Caveat', cursive;
+    color: rgb(0, 0, 0);
+    -webkit-transition: color 1s linear;
+    transition: color 1s linear;
+    cursor: pointer;
+}
+
+.ti1:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.empresa {
+    padding-top: 4%;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(7, 7, 7);
+}
+
+#info {
+    background-color: #c4c4c4;
+}
+
