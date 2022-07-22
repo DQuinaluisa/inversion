@@ -19,5 +19,9 @@
             </div>
         </div>
     </div>
+
+
+    <a class="btn btn-success" href="{{ route('message') }}" >Enviar</a>
+
 </div>
 @endsection

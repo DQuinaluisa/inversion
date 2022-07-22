@@ -8,9 +8,42 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['bar']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Inversion', 'Diario ', 'A la Semana', 'Al Mes', 'Al Año'],
+            ['$10',  0.5,      3.5,  14.00, 168.00],
+            ['$15',  0.75,     5.25, 21.00, 252.00],
+            ['$20',  1,        7.00, 28.00, 336.00],
+            ['$25',  1.25,     8.75, 35.00, 420.00]
+          ]);
+
+          var options = {
+            chart: {
+                title: 'Nombre de la Empresa',
+              subtitle: 'Tabla de valores a generar ',
+            },
+            bars: 'horizontal' // Required for Material Bar Charts.
+          };
+
+          var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+          chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+      </script>
+
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,5 +91,48 @@
       </nav>
       <br>
       {{ $slot }}
+
+      <br>
+      <br>
+
+      <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-white" > Nombre de Empresa</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
 </body>
 </html>
