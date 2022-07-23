@@ -16,32 +16,33 @@
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-    <script type="text/javascript">
-        google.charts.load('current', {'packages':['bar']});
-        google.charts.setOnLoadCallback(drawChart);
+ <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
 
-        function drawChart() {
-          var data = google.visualization.arrayToDataTable([
-            ['Inversion', 'Diario ', 'A la Semana', 'Al Mes', 'Al Año'],
-            ['$10',  0.5,      3.5,  14.00, 168.00],
-            ['$15',  0.75,     5.25, 21.00, 252.00],
-            ['$20',  1,        7.00, 28.00, 336.00],
-            ['$25',  1.25,     8.75, 35.00, 420.00]
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Inversion', 'Al Mes', 'Al Año', 'TOTAL'],
+            ['$10',  3, 36, 46.00],
+            // ['$15',  0.75,     5.25, 21.00, 252.00],
+            // ['$20',  1,        7.00, 28.00, 336.00],
+            // ['$25',  1.25,     8.75, 35.00, 420.00]
           ]);
 
-          var options = {
-            chart: {
-                title: 'Nombre de la Empresa',
-              subtitle: 'Tabla de valores a generar ',
-            },
-            bars: 'horizontal' // Required for Material Bar Charts.
-          };
 
-          var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+        var options = {
+          chart: {
+            //title: 'Nombre de la Empresa',
+            subtitle: 'Tabla de Inversiones ',
+          }
+        };
 
-          chart.draw(data, google.charts.Bar.convertOptions(options));
-        }
-      </script>
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
 
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

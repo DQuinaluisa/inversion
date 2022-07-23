@@ -124,7 +124,7 @@
                     <div class="row">
 
                         <div class="col-md-12 ">
-                            <div class="card sueno">
+                            <div class="card ahorrar">
                                  <div class="row">
 
                                         <div class="col-md-6 col-sm-12">
@@ -159,7 +159,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 "  style="padding-top: 2%">
-                            <div class="card sueno">
+                            <div class="card metas">
                                  <div class="row">
 
                                         <div class="col-md-6 col-sm-12">
@@ -195,13 +195,22 @@
                 </div>
 
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12" >
-                            <div class="tables" id="barchart_material"  ></div>
-                        </div>
-                        <div class="col-md-12">
-                            <p class="infoPlan">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusamus ex nulla voluptates numquam nihil, blanditiis quam. Quod, unde optio obcaecati eaque dolores quaerat ipsum? Quia iste mollitia amet eaque.</p>
-                        </div>
+                    <div class="row" >
+
+                            <div class="col-md-3" >
+
+                            </div>
+                            <div class="col-md-6" >
+                                <div class="tables" id="columnchart_material"  ></div>
+                            </div>
+                            <div class="col-md-3" >
+
+                            </div>
+                            <div class="col-md-12">
+                                <p class="infoPlan">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusamus ex nulla voluptates numquam nihil, blanditiis quam. Quod, unde optio obcaecati eaque dolores quaerat ipsum? Quia iste mollitia amet eaque.</p>
+                            </div>
+
+
                     </div>
                 </div>
             </section>
@@ -218,7 +227,7 @@
                     </div>
                 </div>
 
-                <div class="cuadroPlan" >
+                {{-- <div class="cuadroPlan" >
 
 
 
@@ -255,8 +264,36 @@
                         </div>
                     </div>
                     <br><br>
-                </div>
+                </div> --}}
 
+
+                <div class="cuadroPlan">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12" style="padding-top: 2% ">
+
+                            </div>
+                            <div class="col-md-6 col-sm-12" style="padding-top: 2% ">
+                               <div class="card card1">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <h2 class="tituloPlan">Plan Mico</h2>
+                                            <h1 class="text-center" >10</h1>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12" style="padding-top: 2%; background-color: black; ">
+                                            <p class="descripcionPlan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ratione necessitatibus ullam cum a dolorum doloribus ut in rerum, vitae inventore sint, nostrum nisi iure, maiores fuga eaque optio ipsum?</p>
+                                            <button class="btn btn-primary boton"  >Adquirir Plan</button>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
 
             </section>
 
