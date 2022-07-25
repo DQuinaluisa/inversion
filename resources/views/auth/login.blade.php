@@ -40,7 +40,7 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
+                        {{-- <div class="row mb-3">
                             <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
@@ -50,31 +50,31 @@
                                     </label>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
+                            <div class="col-md-6 offset-md-6">
+                                <button type="submit" class="btn btn-success">
+                                    {{ __('Ingresar') }}
                                 </button>
 
-                                @if (Route::has('password.request'))
+
+
+                                {{-- @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
-                                @endif
+                                @endif --}}
                             </div>
                         </div>
-                 
+
                         <br>
                         <div class="row mb-0">
-                            <div class="col-md-8 offset-md-6">
-                              <button type="button" class="btn btn-outline-success btn-md btn-block"
-                               onclick="location.href='{{ route('register') }}'">
-                               Sign in</button>
-                                
-            </div>
-                </div>
+                            <div class="col-md-6 offset-md-6">
+                                <a class="nav-link register "  href="{{ route('register') }}">{{ __('Aun no tienes cuenta Registrate?') }}</a>
+
+                              </div>
+                        </div>
                     </form>
                 </div>
             </div>

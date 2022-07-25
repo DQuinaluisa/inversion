@@ -10518,6 +10518,15 @@ background: linear-gradient(to bottom, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, 
     margin: 5%;
 }
 
+.register {
+    position: relative;
+    right: 20%;
+}
+
+.login {
+    position: relative;
+    right: 5%;
+}
 
 
 .tables {
@@ -10533,5 +10542,9 @@ background: linear-gradient(to bottom, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, 
     /* For mobile phones: */
    .tables{
       display: none;
+    }
+    .register {
+        position: relative;
+        right: 2%;
     }
   }

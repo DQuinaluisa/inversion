@@ -62,8 +62,8 @@
                         </div>
 
                         <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                            <div class="col-md-6 offset-md-6">
+                                <button type="submit" class="btn btn-success">
                                     {{ __('Register') }}
                                 </button>
                             </div>
@@ -72,9 +72,9 @@
                         <br>
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-6">
-                              <button type="button" class="btn btn-outline-success btn-md btn-block"
+                              <a type="button" class="nav-link login"
                                onclick="location.href='{{ route('login') }}'">
-                                Login</button>
+                                Ya tienes cuenta</a>
                     </form>
                 </div>
             </div>

@@ -182,38 +182,6 @@
             </section>
 
 
-            <section>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="text-center crece" >Nuestros Planes </h2>
-                                <h1 class="text-center ">Nombre de la Empresa</h1>
-                        </div>
-                        <hr class="lineas">
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="row" >
-
-                            <div class="col-md-3" >
-
-                            </div>
-                            <div class="col-md-6" >
-                                <div class="tables" id="columnchart_material"  ></div>
-                            </div>
-                            <div class="col-md-3" >
-
-                            </div>
-                            <div class="col-md-12">
-                                <p class="infoPlan">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusamus ex nulla voluptates numquam nihil, blanditiis quam. Quod, unde optio obcaecati eaque dolores quaerat ipsum? Quia iste mollitia amet eaque.</p>
-                            </div>
-
-
-                    </div>
-                </div>
-            </section>
 
             <section>
 
@@ -298,6 +266,38 @@
             </section>
 
 
+            <section>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="text-center crece" >Nuestros Planes </h2>
+                                <h1 class="text-center ">Nombre de la Empresa</h1>
+                        </div>
+                        <hr class="lineas">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row" >
+
+                            <div class="col-md-3" >
+
+                            </div>
+                            <div class="col-md-6" >
+                                <div class="tables" id="columnchart_material"  ></div>
+                            </div>
+                            <div class="col-md-3" >
+
+                            </div>
+                            <div class="col-md-12">
+                                <p class="infoPlan">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusamus ex nulla voluptates numquam nihil, blanditiis quam. Quod, unde optio obcaecati eaque dolores quaerat ipsum? Quia iste mollitia amet eaque.</p>
+                            </div>
+
+
+                    </div>
+                </div>
+            </section>
 
     </x-menu>
 </body>
