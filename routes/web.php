@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\Admin\UserController;
+
 use App\Models\User;
 /*
 |--------------------------------------------------------------------------
@@ -56,5 +57,8 @@ Auth::routes();
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index3'])->middleware('can:admin')->name('admin');
 
 // Route::get('/users', [UserController::class, 'index' ])->name('admin');
+
+
+
 
 

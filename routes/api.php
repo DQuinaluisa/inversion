@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PayPalController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::group(['prefix' => 'paypal'], function() {
+    Route::post('/order/create', [PayPalController::class, 'create']);
+    Route::post('/order/capture', [PayPalController::class, 'capture']);
+});
+

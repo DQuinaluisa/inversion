@@ -15,11 +15,11 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body style="background: rgb(197, 197, 197)">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -79,9 +79,50 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4" >
             @yield('content')
         </main>
+
+        <br>
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                  ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 Copyright:
+              <a class="text-white" > Nombre de Empresa</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
     </div>
 </body>
 </html>

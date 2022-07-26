@@ -10538,6 +10538,17 @@ background: linear-gradient(to bottom, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, 
     padding-top: 10%;
 }
 
+.compraPlan {
+    padding-top: 25%;
+    text-align: center;
+
+}
+
+#paypal-button-container {
+    display: none;
+}
+
+
 @media only screen and (max-width: 815px) {
     /* For mobile phones: */
    .tables{

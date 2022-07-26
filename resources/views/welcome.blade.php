@@ -89,16 +89,18 @@
                                 <br>
                             </div>
 
-                            <div class="col-md-6 col-sm-12">
+                            <div class="col-md-12 col-sm-12">
                                 <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quaerat pariatur commodi expedita aliquam deserunt accusantium quasi deleniti sapiente quia similique ex nostrum suscipit facilis, odit possimus veniam iusto. Illo?
+                                   Somos una organizacion la cual se basa en las inversiones a largo plazo.
+                                   Nuesto objetivo es poder ayudar a crecer tu dinero de la mejor forma, mediante un interes a largo plazo tu pequeño
+                                   monto pasara a incrementar.
                                 </p>
                             </div>
-                            <div class="col-md-6 col-sm-12">
+                            {{-- <div class="col-md-6 col-sm-12">
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, dignissimos provident corrupti rerum inventore eum perspiciatis alias ea sunt accusantium suscipit neque laborum assumenda veniam? Nulla at exercitationem dicta nihil?
                                 </p>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
 
@@ -248,14 +250,15 @@
                                <div class="card card1">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12">
-                                            <h2 class="tituloPlan">Plan Mico</h2>
-                                            <h1 class="text-center" >10</h1>
+                                            <h2 class="compraPlan">Plan Mico</h2>
+                                            <h1 class="text-center" >$ 10.00</h1>
                                         </div>
-                                        <div class="col-md-6 col-sm-12" style="padding-top: 2%; background-color: black; ">
-                                            <p class="descripcionPlan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ratione necessitatibus ullam cum a dolorum doloribus ut in rerum, vitae inventore sint, nostrum nisi iure, maiores fuga eaque optio ipsum?</p>
-                                            <button class="btn btn-primary boton"  >Adquirir Plan</button>
+                                        <div class="col-md-6 col-sm-12" style="padding-top: 2%; ">
+                                            <p class="descripcionPlan">Con el minimo monto de diez dolares, puedes empezar ahorrar ya no dejes ese dinero tranquilo y mejor ponlo a trabajar</p>
+                                            <a class="btn btn-primary boton" href="{{ route('register') }}" >Adquirir Plan</a>
                                         </div>
                                     </div>
+                                    <br>
                                </div>
                             </div>
                             <div class="col-md-3 col-sm-12">
@@ -294,13 +297,17 @@
 
                             </div>
                             <div class="col-md-12">
-                                <p class="infoPlan">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusamus ex nulla voluptates numquam nihil, blanditiis quam. Quod, unde optio obcaecati eaque dolores quaerat ipsum? Quia iste mollitia amet eaque.</p>
+                                {{-- <p class="infoPlan">Nuesto pan </p> --}}
                             </div>
 
 
                     </div>
                 </div>
             </section>
+
+
+
+
 
     </x-menu>
 </body>
