@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -29,5 +29,12 @@ class HomeController extends Controller
     public function index2()
     {
         return view('message');
+    }
+
+    public function index3()
+    {
+        $users = User::paginate();
+
+       return view('admin', compact('users'));
     }
 }

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,31 +17,58 @@
 </head>
 <body>
 
-    @extends('layouts.app')
+    <x-menu>
+        <br>
 
-    @section('content')
-
-        <div class="container-fluid ">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12 "  >
-                    <h2 class="text-center" >Ya es hora de empezar a construir tus metas</h2>
+                <div class="col-md-12">
+                    <div class="col-md-12">
+                        <h2 class="text-center crece" >Miembros Registrados </h2>
+                            <h1 class="text-center " >Nombre de la Empresa</h1>
 
-                    <p class="text-center" >
-                        Invierte con nosotros y cumple todos tus sueños
-                    </p>
+                    </div>
+                    <hr class="lineas">
                 </div>
-
             </div>
         </div>
 
-        <div class="container-fluid">
-            {{ Auth::user()->name }}
+        <div class="container" style="padding-top: 4%;" >
+            <div class="row">
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Nombre</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @foreach ($users as $user)
+                                        <tr>
+                                            <td></td>
+                                            <td> {{ $user->name }} </td>
+                                            <td> {{ $user->email }} </td>
+                                        </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                </div>
+            </div>
         </div>
-
-
-
-    @endsection
-
+        <br>
+        <br>
+    </x-menu>
 
 
 </body>

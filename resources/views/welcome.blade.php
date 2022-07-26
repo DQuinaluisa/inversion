@@ -130,7 +130,8 @@
                                         <div class="col-md-6 col-sm-12">
 
                                             <h2 class="text-center tituloMetas">Ya es tiempo para AHORRAR </h2>
-                                            <p class="text-center text1"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium similique maxime modi qui reiciendis repudiandae eius excepturi, ducimus dolor fugiat delectus optio officia molestiae deserunt eligendi nihil unde nesciunt voluptate!</p>
+                                            <p class="text-center text1"> Es el mejor momento para empezar a ahorrar, tanto para tí como para tu familia.
+                                                Has que tu dinero crezca con el tiempo y tus ganacias sean mayores. </p>
 
                                         </div>
                                         <div class="col-md-6 col-sm-12">
@@ -150,7 +151,9 @@
                                         <div class="col-md-6 col-sm-12">
 
                                             <h2 class="text-center tituloMetas">Tu dinero esta SEGURO </h2>
-                                            <p class="text-center text1"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium similique maxime modi qui reiciendis repudiandae eius excepturi, ducimus dolor fugiat delectus optio officia molestiae deserunt eligendi nihil unde nesciunt voluptate!</p>
+                                            <p class="text-center text1"> Tu dinero estara muy bien resguardado.
+                                                Nuestos sistemas de seguridad son los mejores, ya no lo tengas guardado debajo de tu cama.
+                                            </p>
 
                                         </div>
 
@@ -165,7 +168,7 @@
                                         <div class="col-md-6 col-sm-12">
 
                                             <h2 class="text-center tituloMetas">Cumple tus METAS</h2>
-                                            <p class="text-center text1"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium similique maxime modi qui reiciendis repudiandae eius excepturi, ducimus dolor fugiat delectus optio officia molestiae deserunt eligendi nihil unde nesciunt voluptate!</p>
+                                            <p class="text-center text1"> Ya basta de peros y mejor empieza a cumplir esos sueños, de tener una casa, viajar o que mejor tener ese auto de tus sueños </p>
 
                                         </div>
                                         <div class="col-md-6 col-sm-12">

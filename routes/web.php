@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use App\Http\Controllers\Admin\UserController;
 use App\Models\User;
 /*
 |--------------------------------------------------------------------------
@@ -32,7 +33,7 @@ Route::get('send', function () {
 
     }
     Mail::to($user->email, $user->name)->send(new \App\Mail\MyTestMail($details));
-   return view('message');
+    return view('message');
 });
 
 
@@ -48,8 +49,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/message', [App\Http\Controllers\HomeController::class, 'index2'])->name('message');
 
 
 Auth::routes();
-//Route::get('/send', [App\Mail\MyTestMail::class, 'build'])->name('message');
+Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index3'])->middleware('can:admin')->name('admin');
+
+// Route::get('/users', [UserController::class, 'index' ])->name('admin');
+
+
