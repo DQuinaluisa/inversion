@@ -8,7 +8,7 @@ return [
     // 'client_id' => env('PAYPAL_CLIENT_ID'),
     // 'secret' => env('PAYPAL_SECRET'),
 
-    'sandbox' => [
+    'live' => [
                 'client_id'         => env('PAYPAL_CLIENT_ID', ''),
                 'client_secret'     => env('PAYPAL_SECRET', ''),
                 'app_id'            => 'APP-80W284485P519543T',

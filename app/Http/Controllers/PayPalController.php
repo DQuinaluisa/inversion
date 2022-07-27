@@ -57,27 +57,29 @@ class PayPalController extends Controller
 
     public function capture(Request $request) {
 
-       $users = Auth::guard()->user();
+       $this->guard();
 
-        $data = json_decode($request->getContent(), true);
 
-        $orderId = $data['orderId'];
-        //$provider = new PayPalClient;
-        //iniciamos paypal
 
-        $provider = PayPal::setProvider();
-        $provider->setApiCredentials(config('paypal'));
-        $token = $provider->getAccessToken();
-        $provider->setAccessToken($token);
+        // $data = json_decode($request->getContent(), true);
 
-        $result = $provider->capturePaymentOrder($orderId);
+        // $orderId = $data['orderId'];
+        // //$provider = new PayPalClient;
+        // //iniciamos paypal
 
-        if($result['status'] == "COMPLETED") {
-            DB::table('orders')
-            ->where('reference_number', $result['id'])
-            ->update(['status' => 'COMPLETED', 'updated_at' => \Carbon\Carbon::now()]);
-        }
+        // $provider = PayPal::setProvider();
+        // $provider->setApiCredentials(config('paypal'));
+        // $token = $provider->getAccessToken();
+        // $provider->setAccessToken($token);
 
-        return response()->json($result);
+        // $result = $provider->capturePaymentOrder($orderId);
+
+        // if($result['status'] == "COMPLETED") {
+        //     DB::table('orders')
+        //     ->where('reference_number', $result['id'])
+        //     ->update(['status' => 'COMPLETED', 'updated_at' => \Carbon\Carbon::now()]);
+        // }
+
+        return response()->json($this);
     }
 }
