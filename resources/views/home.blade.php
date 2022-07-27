@@ -35,8 +35,32 @@
 
             </div>
 
+            {{-- <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        @if (session('status'))
+
+                          <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>{{ Auth::user()->name }}....</strong>   {{ session('status') }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          @endif
+
+
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+
+                    </div>
+                </div>
+            </div> --}}
+
             <div class="row">
-                <div class="col-md-3 col-sm-12"">
+                <div class="col-md-3 col-sm-12">
 
                 </div>
                 <div class="col-md-6 col-sm-12">
@@ -53,6 +77,11 @@
                             value="product-1"
                             style="margin: 5%"
                             >Pagar</button>
+
+                            {{-- <a type="submit" class="btn btn-primary"
+                            href="{{ url('/paypal/pay') }}"
+                            style="margin: 5%"
+                            >Pagar</a> --}}
                         <br>
                     </div>
 
@@ -79,8 +108,8 @@
                     <div id="paypal-button-container">
 
                     </div>
-
-                        <script  src="https://www.paypal.com/sdk/js?client-id=AeRnnp3HSVjl7S0JyzlpxsYHdDvQyil0uV6p6fKGvHsLdb4ChBhMLcUrcVWtJ9BH86ZrXcuF5D2og_4n&currency=USD&vault=true"></script>
+                    <script src="https://www.paypal.com/sdk/js?client-id={{ env('PAYPAL_CLIENT_ID') }}&currency=USD"></script>
+                        {{-- <script  src="https://www.paypal.com/sdk/js?client-id={{ env('PAYPAL_CLIENT_ID') }}&currency=USD&vault=true"></script> --}}
 
                     <!-- Include the PayPal JavaScript SDK -->
 
@@ -168,6 +197,40 @@
                 </div>
             </div>
         </div>
+
+
+
+
+        {{-- <script src="https://www.paypal.com/sdk/js?client-id={{ env('PAYPAL_CLIENT_ID') }}&currency=USD"></script>
+        <!-- Set up a container element for the button -->
+        <div id="paypal-button-container"></div>
+        <script>
+          paypal.Buttons({
+            // Sets up the transaction when a payment button is clicked
+            createOrder: (data, actions) => {
+              return actions.order.create({
+                purchase_units: [{
+                  amount: {
+                    value: '77.44' // Can also reference a variable or function
+                  }
+                }]
+              });
+            },
+            // Finalize the transaction after payer approval
+            onApprove: (data, actions) => {
+              return actions.order.capture().then(function(orderData) {
+                // Successful capture! For dev/demo purposes:
+                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                const transaction = orderData.purchase_units[0].payments.captures[0];
+                alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
+                // When ready to go live, remove the alert and show a success message within this page. For example:
+                // const element = document.getElementById('paypal-button-container');
+                // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                // Or go to another URL:  actions.redirect('thank_you.html');
+              });
+            }
+          }).render('#paypal-button-container');
+        </script> --}}
 
     @endsection
 

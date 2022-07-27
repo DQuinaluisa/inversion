@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\Admin\UserController;
-
+use App\Http\Controllers\PaymentController;
 use App\Models\User;
 /*
 |--------------------------------------------------------------------------
@@ -60,5 +60,6 @@ Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index3'])->mi
 
 
 
-
+Route::get('/paypal/pay', [PaymentController::class, 'payWithPayPal']);
+Route::get('/paypal/status',  [PaymentController::class, 'payPalStatus']);
 
