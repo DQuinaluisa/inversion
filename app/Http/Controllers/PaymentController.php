@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Models\Order;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 use PayPal\Rest\ApiContext;
 use PayPal\Auth\OAuthTokenCredential;
-
+use Illuminate\Support\Facades\DB;
 use PayPal\Api\Payer;
 use PayPal\Api\Amount;
 use PayPal\Api\Payment;
@@ -26,7 +27,7 @@ class PaymentController extends Controller
         $this->apiContext = new ApiContext(
             new OAuthTokenCredential(
                 $payPalConfig['client_id'],
-                $payPalConfig['secret']
+                $payPalConfig['client_secret']
             )
         );
 
@@ -38,9 +39,13 @@ class PaymentController extends Controller
         $payer = new Payer();
         $payer->setPaymentMethod('paypal');
 
+
+
         $amount = new Amount();
         $amount->setTotal('10.00');
         $amount->setCurrency('USD');
+
+
 
         $transaction = new Transaction();
         $transaction->setAmount($amount);
@@ -66,11 +71,13 @@ class PaymentController extends Controller
         } catch (PayPalConnectionException $ex) {
             echo $ex->getData();
         }
+
+           // return response()->json($users);
     }
 
     public function payPalStatus(Request $request)
     {
-
+        $users = Auth::user()->id;
 
         $paymentId = $request->input('paymentId');
         $payerId = $request->input('PayerID');
@@ -90,12 +97,24 @@ class PaymentController extends Controller
         $result = $payment->execute($execution, $this->apiContext);
 
         if ($result->getState() === 'approved') {
+            $order =  Order::create([
+                'price' =>  '10.00',
+                'description' => 'Plan1',
+                'status' => 'COMPLETED',
+                'reference_number' => $paymentId,
+                'user_id' => $users
+            ]);
             $status = 'Gracias! El pago a través de PayPal se ha ralizado correctamente.';
             return redirect('/home')->with(compact('status'));
+            //return response()->json($order);
+
         }
 
+
+
         $status = 'Lo sentimos! El pago a través de PayPal no se pudo realizar.';
-        return redirect('/home')->with(compact('status'));
+       return redirect('/home')->with(compact('status'));
+
      }
 
 }

@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
-use App\Http\Controllers\Admin\UserController;
+
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\RemoveController;
 use App\Models\User;
 /*
 |--------------------------------------------------------------------------
@@ -55,10 +56,13 @@ Route::get('/message', [App\Http\Controllers\HomeController::class, 'index2'])->
 
 Auth::routes();
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index3'])->middleware('can:admin')->name('admin');
+Route::get('/create', [App\Http\Controllers\HomeController::class, 'index4'])->name('create');
 
 // Route::get('/users', [UserController::class, 'index' ])->name('admin');
 
+Route::get('/create', [RemoveController::class, 'index'])->name('create');
 
+Route::get('/remove', [RemoveController::class, 'create'])->name('remove');
 
 Route::get('/paypal/pay', [PaymentController::class, 'payWithPayPal']);
 Route::get('/paypal/status',  [PaymentController::class, 'payPalStatus']);

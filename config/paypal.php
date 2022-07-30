@@ -5,14 +5,15 @@
  */
 
 return [
-    // 'client_id' => env('PAYPAL_CLIENT_ID'),
-    // 'secret' => env('PAYPAL_SECRET'),
+    'client_id' => env('PAYPAL_CLIENT_ID'),
+    'client_secret' => env('PAYPAL_SECRET'),
 
-    'live' => [
-                'client_id'         => env('PAYPAL_CLIENT_ID', ''),
-                'client_secret'     => env('PAYPAL_SECRET', ''),
-                'app_id'            => 'APP-80W284485P519543T',
-            ],
+
+    // 'sandbox' => [
+    //             'client_id'         => env('PAYPAL_CLIENT_ID', ''),
+    //             'client_secret'     => env('PAYPAL_SECRET', ''),
+    //             'app_id'            => 'APP-80W284485P519543T',
+    //         ],
 
     'settings' => [
         'mode' => env('PAYPAL_MODE', 'sandbox'),

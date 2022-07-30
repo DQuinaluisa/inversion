@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\User;
 use DB;
 class Order extends Model
 {
@@ -13,8 +14,13 @@ class Order extends Model
         'price',
         'description',
         'status',
-        'reference_number'
+        'reference_number',
+        'user_id'
     ];
+
+    public function users() {
+        return $this->belongsTo(User::class);
+    }
 
 
     public static function getProductPrice($value) {

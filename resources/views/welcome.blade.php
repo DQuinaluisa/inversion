@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Inversion</title>
+    <title> Money Goals</title>
 
 
 </head>
@@ -84,7 +84,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <h2 class="text-center empresa" >Nombre de la Empresa</h2>
+                                <h2 class="text-center empresa" > Money Goals</h2>
                                 <br>
                                 <br>
                             </div>
@@ -116,7 +116,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h2 class="text-center crece" >Construye tu Futuro con Nosotros</h2>
-                                <h1 class="text-center " >Nombre de la Empresa</h1>
+                                <h1 class="text-center " > Money Goals</h1>
 
                         </div>
                         <hr class="lineas">
@@ -194,7 +194,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h2 class="text-center crece" >Nuestros Planes </h2>
-                                <h1 class="text-center ">Nombre de la Empresa</h1>
+                                <h1 class="text-center "> Money Goals</h1>
                         </div>
                         <hr class="lineas">
                     </div>
@@ -250,7 +250,7 @@
                                <div class="card card1">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12">
-                                            <h2 class="compraPlan">Plan Mico</h2>
+                                            <h2 class="compraPlan">Plan Test</h2>
                                             <h1 class="text-center" >$ 10.00</h1>
                                         </div>
                                         <div class="col-md-6 col-sm-12" style="padding-top: 2%; ">
@@ -278,7 +278,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h2 class="text-center crece" >Nuestros Planes </h2>
-                                <h1 class="text-center ">Nombre de la Empresa</h1>
+                                <h1 class="text-center "> Money Goals</h1>
                         </div>
                         <hr class="lineas">
                     </div>

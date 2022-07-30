@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title> Money Goals</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
@@ -32,7 +32,7 @@
 
         var options = {
           chart: {
-            //title: 'Nombre de la Empresa',
+            //title: ' Money Goals',
             subtitle: 'Tabla de Inversiones ',
           }
         };
@@ -56,7 +56,7 @@
 <body>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
-        <a class="navbar-brand"  href="#">Nombre de la Empresa</a>
+        <a class="navbar-brand" style="padding-left: 10%"  href="#"> Money Goals</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -72,24 +72,18 @@
             <li class="nav-item">
                 <a class="nav-link" href="#about">Quienes Somos</a>
               </li>
-            {{-- <li class="nav-item dropdown">
+             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown
+                Sign up
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li> --}}
-            <li class="nav-item">
                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+
+                <div class="dropdown-divider"></div>
+                <a class="nav-link" href="{{ route('login')}}">{{ __('Login')}}</a>
+              </div>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('login')}}">{{ __('Login')}}</a>
-              </li>
           </ul>
 
         </div>
@@ -135,7 +129,7 @@
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2022 Copyright:
-          <a class="text-white" > Nombre de Empresa</a>
+          <a class="text-white" >  Money Goals</a>
         </div>
         <!-- Copyright -->
       </footer>

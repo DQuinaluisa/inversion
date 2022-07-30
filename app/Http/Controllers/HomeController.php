@@ -37,4 +37,12 @@ class HomeController extends Controller
 
        return view('admin', compact('users'));
     }
+
+
+    public function index4()
+    {
+        return view('create');
+    }
+
+
 }

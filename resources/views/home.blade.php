@@ -35,7 +35,7 @@
 
             </div>
 
-            {{-- <div class="container">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-12">
 
@@ -57,7 +57,7 @@
 
                     </div>
                 </div>
-            </div> --}}
+            </div>
 
             <div class="row">
                 <div class="col-md-3 col-sm-12">
@@ -65,23 +65,28 @@
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="card">
-                        <h2 class="text-center" style="padding-top: 5%" >Plan Micro</h2>
-                        <h2 class="text-center" style="padding-top: 5%; display:none" >$10.00</h2>
+                        <h2 class="text-center" style="padding-top: 5%" >Plan Test</h2>
+                        <h2 class="text-center" style="padding-top: 5%;"   >$10.00</h2>
                         <br>
                         <p class="text-center" style="margin: 5%">Con el minimo monto de diez dolares, puedes empezar ahorrar ya no dejes ese dinero tranquilo y mejor ponlo a trabajar</p>
 
-                            <h2 for="product-1" class="text-center"> $10.00</h2>
+                            {{-- <h2 for="product-1" class="text-center"> $10.00</h2>
                             <button type="submit" class="btn btn-primary"
                             id="product-1" name="product"
                             onclick="handleClick(this)"
                             value="product-1"
                             style="margin: 5%"
-                            >Pagar</button>
+                            >Pagar</button> --}}
 
-                            {{-- <a type="submit" class="btn btn-primary"
+
+                            <a type="submit" class="btn btn-primary"
                             href="{{ url('/paypal/pay') }}"
                             style="margin: 5%"
-                            >Pagar</a> --}}
+                            >Pagar</a>
+
+
+
+
                         <br>
                     </div>
 
@@ -99,7 +104,7 @@
 
 
 
-        <div class="container">
+        {{-- <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-12">
 
@@ -115,7 +120,7 @@
 
 
 
-                    <script>
+                {{-- <script>
 
                         function handleClick(radioBtn) {
                             productValue = radioBtn.value;
@@ -196,15 +201,18 @@
 
                 </div>
             </div>
-        </div>
+        </div> --}}
 
 
 
 
-        {{-- <script src="https://www.paypal.com/sdk/js?client-id={{ env('PAYPAL_CLIENT_ID') }}&currency=USD"></script>
+        <script src="https://www.paypal.com/sdk/js?client-id={{ env('PAYPAL_CLIENT_ID') }}&currency=USD"></script>
         <!-- Set up a container element for the button -->
         <div id="paypal-button-container"></div>
         <script>
+
+
+
           paypal.Buttons({
             // Sets up the transaction when a payment button is clicked
             createOrder: (data, actions) => {
@@ -218,7 +226,9 @@
             },
             // Finalize the transaction after payer approval
             onApprove: (data, actions) => {
-              return actions.order.capture().then(function(orderData) {
+              return actions.order.capture(
+
+              ).then(function(orderData) {
                 // Successful capture! For dev/demo purposes:
                 console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
                 const transaction = orderData.purchase_units[0].payments.captures[0];
@@ -230,7 +240,7 @@
               });
             }
           }).render('#paypal-button-container');
-        </script> --}}
+        </script>
 
     @endsection
 
