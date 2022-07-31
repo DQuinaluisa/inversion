@@ -14,7 +14,7 @@ class RemoveMoney extends Model
        'name',
        'email',
        'phone',
-       'description',
+       'user_paypal',
         'status',
         'user_id'
     ];

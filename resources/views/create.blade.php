@@ -1,32 +1,5 @@
 <head>
-    {{-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-    <script type="text/javascript">
-         google.charts.load('current', {'packages':['bar']});
-         google.charts.setOnLoadCallback(drawChart);
-
-         function drawChart() {
-           var data = google.visualization.arrayToDataTable([
-               ['Inversion', 'Al Mes', 'Al Año', 'TOTAL'],
-               ['$10',  3, 36, 46.00],
-               // ['$15',  0.75,     5.25, 21.00, 252.00],
-               // ['$20',  1,        7.00, 28.00, 336.00],
-               // ['$25',  1.25,     8.75, 35.00, 420.00]
-             ]);
-
-
-           var options = {
-             chart: {
-               //title: 'Nombre de la Empresa',
-               subtitle: 'Tabla de Inversiones ',
-             }
-           };
-
-           var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
-
-           chart.draw(data, google.charts.Bar.convertOptions(options));
-         }
-       </script> --}}
        <script src="https://www.paypal.com/sdk/js?client-id={{ env('PAYPAL_CLIENT_ID') }}&currency=USD"></script>
        <!-- Set up a container element for the button -->
        <div id="paypal-button-container"></div>
@@ -78,6 +51,8 @@
 
              <a style="position: relative; left:50%" href="{{ route('remove') }}" class="btn btn-success ">Retirar Ganancias</a> -
 
+
+
             </div>
 
         </div>
@@ -116,6 +91,9 @@
                             @endforeach
                         </tbody>
                     </table>
+                    <div   class="d-flex justify-content-center">
+                        {!! $orders->links() !!}
+                    </div>
                 </div>
             </div>
             <br>

@@ -29,7 +29,7 @@ class RemoveController extends Controller
                ->where('user_id', '=' , $users)
                ->leftjoin('orders', 'users.id', '=', 'orders.user_id')
                ->select('name', 'email', 'status')
-                ->paginate();
+                ->paginate(5);
             //return response()->json($order);
            return view('create', compact('orders'));
     }
@@ -54,14 +54,47 @@ class RemoveController extends Controller
     {
         $users = Auth::user()->id;
 
-        $remove = RemoveMoney::create([
-            'status' => 'In Review',
-            'user_id' => $users
+        $request->validate([
+            'name' =>'required',
+            'email' =>'required',
+            'phone' => ['required', 'string', 'min:13',],
+            'user_paypal' =>'required',
+
+
         ]);
 
+
+        $remove = new RemoveMoney;
+        $remove->name = $request->name;
+        $remove->email = $request->email;
+        $remove->phone = $request->phone;
+        $remove->user_paypal = $request->user_paypal;
+        $remove->status = 'In Review';
+        $remove->user_id = $users;
         $remove->save();
 
-        return view('create');
+        $success = "Formulario enviado con Exito";
+       // return response()->json($remove);
+        return redirect('/home')->with( compact('success') );;
+    }
+
+
+    public function getList()
+    {
+
+        $remove = DB::table('users')
+                ->leftJoin('remove_money', 'users.id', '=', 'remove_money.user_id')
+                ->select('users.id AS id_registered', 'users.name AS name_profile',
+                         'users.email AS email_profile', 'remove_money.name AS name_form',
+                         'remove_money.email AS email_form', 'user_paypal', 'phone',
+                         'remove_money.status AS payment_status', 'remove_money.id AS id_remove')
+                ->orderBy('remove_money.id','desc')
+                ->paginate(8);
+        // $remove = RemoveMoney::paginate();
+
+        //return response()->json($remove);
+
+        return view('list', compact('remove'));
     }
 
     /**
@@ -72,7 +105,9 @@ class RemoveController extends Controller
      */
     public function show($id)
     {
-        //
+        $remove = RemoveMoney::find($id);
+
+        return view('edit', compact('remove'));
     }
 
     /**
@@ -83,7 +118,11 @@ class RemoveController extends Controller
      */
     public function edit($id)
     {
-        //
+        $remove = RemoveMoney::find($id);
+
+       // return response()->json($remove);
+
+        return view('edit', compact('remove'));
     }
 
     /**
@@ -95,7 +134,30 @@ class RemoveController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $users = Auth::user()->id;
+
+        $request->validate([
+            'name' =>'required',
+            'email' =>'required',
+            'phone' => ['required', 'string', 'min:13',],
+            'user_paypal' =>'required',
+
+
+        ]);
+
+        $remove =  RemoveMoney::find($id);
+        $remove->name = $request->get('name');
+        $remove->email = $request->get('email');
+        $remove->phone = $request->get('phone');
+        $remove->user_paypal = $request->get('user_paypal');
+        $remove->status = $request->get('status');
+        $remove->user_id =  $request->get('user_id');
+        $remove->save();
+
+        $success = "Formulario enviado con Exito";
+      // return response()->json($id);
+        return redirect('/list')->with( compact('success') );
+        //return view('edit');
     }
 
     /**

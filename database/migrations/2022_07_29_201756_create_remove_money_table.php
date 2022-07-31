@@ -20,7 +20,7 @@ class CreateRemoveMoneyTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-            $table->string('description');
+            $table->string('user_paypal');
             $table->string('status');
             $table->timestamps();
         });

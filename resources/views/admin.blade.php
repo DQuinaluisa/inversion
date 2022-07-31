@@ -31,6 +31,7 @@
                                     <th></th>
                                     <th>Nombre</th>
                                     <th>Email</th>
+                                    <th>Date</th>
                                 </tr>
                             </thead>
 
@@ -40,10 +41,15 @@
                                             <td></td>
                                             <td> {{ $user->name }} </td>
                                             <td> {{ $user->email }} </td>
+                                            <td> {{ $user->created_at->format('d/m/Y') }} </td>
                                         </tr>
                                 @endforeach
                             </tbody>
                         </table>
+                        <div class="d-flex justify-content-center">
+                            {!! $users->links() !!}
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-3">
