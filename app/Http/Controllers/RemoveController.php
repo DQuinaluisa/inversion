@@ -57,7 +57,7 @@ class RemoveController extends Controller
         $request->validate([
             'name' =>'required',
             'email' =>'required',
-            'phone' => ['required', 'string', 'min:13',],
+            'phone' => ['required', 'string', 'min:10',],
             'user_paypal' =>'required',
 
 
@@ -84,9 +84,9 @@ class RemoveController extends Controller
 
         $remove = DB::table('users')
                 ->leftJoin('remove_money', 'users.id', '=', 'remove_money.user_id')
-                ->select('users.id AS id_registered', 'users.name AS name_profile',
+                ->select('users.id AS id_registered', 'users.name AS name_profile', 'users.phone AS tel_profile',
                          'users.email AS email_profile', 'remove_money.name AS name_form',
-                         'remove_money.email AS email_form', 'user_paypal', 'phone',
+                         'remove_money.email AS email_form', 'user_paypal', 'remove_money.phone AS tel_form',
                          'remove_money.status AS payment_status', 'remove_money.id AS id_remove')
                 ->orderBy('remove_money.id','desc')
                 ->paginate(8);
@@ -139,7 +139,7 @@ class RemoveController extends Controller
         $request->validate([
             'name' =>'required',
             'email' =>'required',
-            'phone' => ['required', 'string', 'min:13',],
+            'phone' => ['required', 'string', 'min:10',],
             'user_paypal' =>'required',
 
 

@@ -52,8 +52,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
-    
-   
+
+
   </head>
 <body>
         <!--<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm nav">-->

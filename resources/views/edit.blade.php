@@ -12,12 +12,20 @@
             <div class="col-md-3 col-sm-12">
 
             </div>
-                 @if(session('status'))
-                      <div class="alert alert-success mb-1 mt-1">
-                 {{ session('status') }}
-                      </div>
-                      @endif
 
+            <div class="col-md-3 col-sm-12">
+                @if(session('status'))
+                <div class="alert alert-success mb-1 mt-1">
+           {{ session('status') }}
+                </div>
+                @endif
+            </div>
+            <div class="col-md-6 col-sm-12">
+
+            </div>
+            <div class="col-md-3 col-sm-12">
+
+            </div>
 
             <div class="col-md-6 col-sm-12">
                 <div class="card"  >
@@ -64,7 +72,7 @@
                                     <div class="form-group">
                                          <strong>Phone:</strong>
 
-                                            <input  type="phone" name="phone" class="form-control  @error('phone') is-invalid @enderror" value="{{ $remove->phone }}">
+                                            <input readonly type="phone" name="phone" class="form-control  @error('phone') is-invalid @enderror" value="{{ $remove->phone }}">
                                             @error('phone')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
