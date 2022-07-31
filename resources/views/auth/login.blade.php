@@ -6,7 +6,11 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header">{{ __('') }}
+                <a style="padding-left: 0%">
+        <img src="{{ URL('img/login.jpg') }}" style="width: 10%;"  alt="" height="40"></a>
+                </div>
+                
 
                 <div class="card-body" >
                     <form method="POST" action="{{ route('login') }}">

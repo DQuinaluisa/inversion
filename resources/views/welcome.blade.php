@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="{{ URL::asset('img/money.ico') }}">
+    <link rel="icon" href="{{ URL::asset('img/money.ico') }}" type="image/x-icon"/>
 
     <title> Money Goals</title>
 
@@ -14,7 +17,9 @@
             <div class="container-fluid cuadro">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 "  >
-                        <h2 class="titulo" >Ya es hora de empezar a construir tus metas</h2>
+                    <br>
+                    <br>
+                        <h2 class="titulo" >Ya es hora de empezar a construir tus metas!!!</h2>
 
                         <p class="texto">
                             Invierte con nosotros y cumple todos tus sueños
