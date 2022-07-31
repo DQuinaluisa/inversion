@@ -56,8 +56,8 @@
    
   </head>
 <body>
-
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
+        <!--<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm nav">-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
         <div class="container">
         <a class="navbar-brand" style="padding-left: 0%"  href="#">
         <img src="{{ URL('img/money8.png') }}" style="width: 35%;"  alt="" height="50">&nbsp; Money Goals</a>
