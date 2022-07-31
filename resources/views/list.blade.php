@@ -70,7 +70,9 @@
                                             <td> {{ $item->user_paypal }} </td>
                                             @if ($item->payment_status == "Paid Out"  )
                                                 <td style="background: rgb(62, 201, 62); color:white"> {{ $item->payment_status }} </td>
-                                            @else
+                                            @elseif($item->payment_status == "ERROR")
+                                            <td style="background: rgb(201, 62, 62); color:white"> {{ $item->payment_status }} </td>
+                                                @else
                                                 <td> {{ $item->payment_status }} </td>
                                             @endif
 
@@ -81,6 +83,10 @@
                                             @if ($item->payment_status == "Paid Out")
                                             <td title="{{ $item->id_registered }}" >
                                                 <a class="btn btn-success"  >Pagado</a>
+                                            </td>
+                                            @elseif ($item->payment_status == "ERROR")
+                                            <td title="{{ $item->id_registered }}" >
+                                                <a class="btn btn-danger" href="{{ url('edit', $item->id_remove) }}" >Revisar</a>
                                             </td>
                                             @else
                                             <td title="{{ $item->id_registered }}" >

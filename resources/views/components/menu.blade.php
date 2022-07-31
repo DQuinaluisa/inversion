@@ -52,12 +52,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
-    
-   
+
+
   </head>
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
+    <nav  class="navbar fixed-top navbar-expand-lg navbar-light nav">
         <div class="container">
         <a class="navbar-brand" style="padding-left: 0%"  href="#">
         <img src="{{ URL('img/money8.png') }}" style="width: 35%;"  alt="" height="50">&nbsp; Money Goals</a>

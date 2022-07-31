@@ -6,7 +6,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <link rel="shortcut icon" type="image/x-icon" href="{{ URL::asset('img/money.ico') }}">
     {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
     <title> Money Goals</title>
     <!-- Scripts -->
@@ -29,7 +29,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    
+
 </head>
 <body style="background: rgb(197, 197, 197)">
     <div id="app">
@@ -39,11 +39,11 @@
                     {{-- {{ config('app.name', 'Laravel') }} --}}
                     <img src="{{ URL('img/money8.png') }}" style="width: 35%;"  alt="" height="50">&nbsp; Money Goals
                 </a>
-                
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-                
+
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->

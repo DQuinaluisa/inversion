@@ -55,7 +55,7 @@
                                     <div class="form-group">
                                          <strong>Phone:</strong>
 
-                                            <input type="phone" name="phone" class="form-control  @error('phone') is-invalid @enderror" placeholder="+593987456321">
+                                            <input type="phone" name="phone" class="form-control  @error('phone') is-invalid @enderror" placeholder="0987456321">
                                             @error('phone')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>

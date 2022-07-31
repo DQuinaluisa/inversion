@@ -1,5 +1,5 @@
 <head>
-
+    <link rel="shortcut icon" type="image/x-icon" href="{{ URL::asset('img/money.ico') }}">
        <script src="https://www.paypal.com/sdk/js?client-id={{ env('PAYPAL_CLIENT_ID') }}&currency=USD"></script>
        <!-- Set up a container element for the button -->
        <div id="paypal-button-container"></div>
