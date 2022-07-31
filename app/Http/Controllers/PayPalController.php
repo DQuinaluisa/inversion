@@ -49,6 +49,7 @@ class PayPalController extends Controller
             Order::create([
                 'price' => $price,
                 'description' => $description,
+                'phone' => '0963302651',
                 'status' => $order['status'],
                 'reference_number' => $order['id']
             ]);

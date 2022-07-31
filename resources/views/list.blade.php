@@ -41,7 +41,7 @@
 
                 </div>
                 <div class="col-md-10 col-sm-12">
-                    <div class="card" style="padding-left: 5%">
+                    <div class="card" >
                         <table class="table table-responsive">
                             <thead>
                                 <tr>
@@ -49,9 +49,10 @@
 
                                     <th>Formulario del pedido</th>
                                     <th>Formulario del pedido</th>
-                                    <th>Phone</th>
+                                    <th>Formulario del pedido</th>
                                     <th>PayPal</th>
                                     <th>Estado</th>
+                                    <th>Dueño de la Cuenta</th>
                                     <th>Dueño de la Cuenta</th>
                                     <th>Dueño de la Cuenta</th>
                                     <th>Accion</th>
@@ -65,7 +66,7 @@
 
                                             <td> {{ $item->name_form }} </td>
                                             <td> {{ $item->email_form }} </td>
-                                            <td> {{ $item->phone }} </td>
+                                            <td> {{ $item->tel_form }} </td>
                                             <td> {{ $item->user_paypal }} </td>
                                             @if ($item->payment_status == "Paid Out"  )
                                                 <td style="background: rgb(62, 201, 62); color:white"> {{ $item->payment_status }} </td>
@@ -76,13 +77,14 @@
 
                                             <td> {{ $item->name_profile }} </td>
                                             <td> {{ $item->email_profile }} </td>
+                                            <td> {{ $item->tel_profile }} </td>
                                             @if ($item->payment_status == "Paid Out")
                                             <td title="{{ $item->id_registered }}" >
                                                 <a class="btn btn-success"  >Pagado</a>
                                             </td>
                                             @else
                                             <td title="{{ $item->id_registered }}" >
-                                                <a class="btn btn-warning" href="{{ route('edit', $item->id_remove) }}" >Pagar</a>
+                                                <a class="btn btn-warning" href="{{ url('edit', $item->id_remove) }}" >Pagar</a>
                                             </td>
                                             @endif
 
