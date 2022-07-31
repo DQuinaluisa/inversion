@@ -33,7 +33,7 @@ class HomeController extends Controller
 
     public function index3()
     {
-        $users = User::paginate();
+        $users = User::paginate(5);
 
        return view('admin', compact('users'));
     }

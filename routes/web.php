@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Mail;
 
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\RemoveController;
+use App\Models\RemoveMoney;
 use App\Models\User;
 /*
 |--------------------------------------------------------------------------
@@ -63,6 +64,10 @@ Route::get('/create', [App\Http\Controllers\HomeController::class, 'index4'])->n
 Route::get('/create', [RemoveController::class, 'index'])->name('create');
 
 Route::get('/remove', [RemoveController::class, 'create'])->name('remove');
+Route::post('/remove', [RemoveController::class, 'store'])->name('remove');
+Route::get('/list', [RemoveController::class, 'getList'])->middleware('can:admin')->name('list');
+Route::get('/edit/{id}', [RemoveController::class, 'edit'])->middleware('can:admin')->name('edit');
+Route::patch('/edit/{id}', [RemoveController::class, 'update'])->middleware('can:admin')->name('edit');
 
 Route::get('/paypal/pay', [PaymentController::class, 'payWithPayPal']);
 Route::get('/paypal/status',  [PaymentController::class, 'payPalStatus']);
