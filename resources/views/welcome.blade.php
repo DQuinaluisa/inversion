@@ -22,8 +22,11 @@
                         <h2 class="titulo" >Ya es hora de empezar a construir tus metas!!!</h2>
 
                         <p class="texto">
-                            Invierte con nosotros y cumple todos tus sueños
+                            Invierte en los mejores fondos de inversión y cumple todos tus sueños.
                         </p>
+                        <p>
+                            No necesitas ser un experto para invertir tu dinero. Ahora hazlo desde <b>MONEYGOALS</b>
+                            y se parte de nuestro equipo de fondos de inversión.</p>
                     </div>
 
                     <div class="col-md-6 col-sm-12 ">
@@ -120,8 +123,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h2 class="text-center crece" >Construye tu Futuro con Nosotros</h2>
-                                <h1 class="text-center " > Money Goals</h1>
+                            <h2 class="text-center crece" >¿Cómo Funciona? 
+                            </h2>
+                                <h1 class="text-center " ></h1>
 
                         </div>
                         <hr class="lineas">
@@ -136,10 +140,49 @@
 
                                         <div class="col-md-6 col-sm-12">
 
-                                            <h2 class="text-center tituloMetas">Ya es tiempo para AHORRAR </h2>
-                                            <p class="text-center text1"> Es el mejor momento para empezar a ahorrar, tanto para tí como para tu familia.
-                                                Has que tu dinero crezca con el tiempo y tus ganacias sean mayores. </p>
+                                            
+                                            <p class="text-center text1">Invertir a través de <b>MONEYGOALS</b> es posible para cualquier persona
+                                        y para cualquier bolsillo, sin comisiones al realizar un deposito o retirar fondos</p>
+                                        <p class="text-center text1">Es fácil comenzar con pequeñas cantidades de dinero. Realizando una inversión mínima recibiras grandes beneficios.</p>
+                                        <p class="text-center text1">Todos tenemos que empezar por algún lugar. 
+                                                Déjanos ayudarte a empezar tu viaje en la inversión. 
+                                            </p>
+                                        <h2 class="text-center tituloMetas"><b>Invierte con nosotros</b></h2>
 
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <img class="img1" src="{{ URL('img/inversion4.png') }}" alt="">
+                                        </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="text-center crece" >Construye tu Futuro con Nosotros</h2>
+                                <h1 class="text-center " ></h1>
+
+                        </div>
+                        <hr class="lineas">
+                    </div>
+                </div>
+                <div class="container"  >
+                    <div class="row">
+
+                        <div class="col-md-12 ">
+                            <div class="card ahorrar">
+                                 <div class="row">
+
+                                        <div class="col-md-6 col-sm-12">
+                                            <p class="text-center text1"> Es el mejor momento para empezar a ahorrar, tanto para tí como para tu familia.
+                                                Haz que tu dinero crezca con el tiempo y tus ganacias sean mayores. </p>
+
+                                                <p class="text-center text1">Nuestros planes de inversión estan pensados en ti, 
+                                                optimiza tus ahorros y recibes actractivos rendimientos.</p>
+                                                <h2 class="text-center tituloMetas"><b>Ya es tiempo para AHORRAR </b></h2>
                                         </div>
                                         <div class="col-md-6 col-sm-12">
                                             <img class="img1" src="{{ URL('img/ahorrar.png') }}" alt="">
@@ -147,6 +190,14 @@
                                 </div>
 
                             </div>
+                        </div>
+
+                        <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="text-center crece" >Seguridad y Soporte</h2>
+                                <h1 class="text-center " ></h1>
+
                         </div>
 
                         <div class="col-md-12 " style="padding-top: 2%">
@@ -157,9 +208,16 @@
                                     </div>
                                         <div class="col-md-6 col-sm-12">
 
-                                            <h2 class="text-center tituloMetas">Tu dinero esta SEGURO </h2>
-                                            <p class="text-center text1"> Tu dinero estara muy bien resguardado.
-                                                Nuestos sistemas de seguridad son los mejores, ya no lo tengas guardado debajo de tu cama.
+                                            <h2 class="text-center tituloMetas"><b>Tu dinero esta SEGURO </b></h2>
+                                            <p class="text-center text1"> Todos nuestros servicios reciben los mismos
+                                                 servicios de calidad, la misma ejecución y el mismo nivel de soporte, 
+                                                 manejados por expertos en materia de inversiones y análisis de riesgos
+                                                 en inversiones.
+                                            </p>
+
+                                            <p class="text-center text1"> A veces invertir puede ser complicado y confuso. 
+                                                <b>MONEYGOALS</b> acaba con las dificultades de invertir gracias a
+                                                 herramientas intuitivas que aportan eficiencia y simplicidad.
                                             </p>
 
                                         </div>
@@ -174,8 +232,14 @@
 
                                         <div class="col-md-6 col-sm-12">
 
-                                            <h2 class="text-center tituloMetas">Cumple tus METAS</h2>
-                                            <p class="text-center text1"> Ya basta de peros y mejor empieza a cumplir esos sueños, de tener una casa, viajar o que mejor tener ese auto de tus sueños </p>
+                                            <h2 class="text-center tituloMetas"><b>Cumple tus METAS</b></h2>
+                                            <p class="text-center text1">Todos queremos hacer nuestros sueños realidad
+                                                para lograrlo se parte de nuestro equipo de trabajo.
+                                            </p>
+                                            <p class="text-center text1">Sacá el máximo provecho de tu cuenta,
+                                                no pierdas la oportunidad de potenciar tu dinero cumple tus sueños con <b>MONEYGOALS.</b>
+                                            </p>
+                                            
 
                                         </div>
                                         <div class="col-md-6 col-sm-12">
@@ -199,7 +263,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h2 class="text-center crece" >Nuestros Planes </h2>
-                                <h1 class="text-center "> Money Goals</h1>
+                                <h1 class="text-center "></h1>
                         </div>
                         <hr class="lineas">
                     </div>
