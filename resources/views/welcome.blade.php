@@ -92,18 +92,50 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <h2 class="text-center empresa" > Money Goals</h2>
+                                <h2 class="text-center empresa" ></h2>
                                 <br>
                                 <br>
                             </div>
 
                             <div class="col-md-12 col-sm-12">
                                 <p>
-                                   Somos una organizacion la cual se basa en las inversiones a largo plazo.
-                                   Nuesto objetivo es poder ayudar a crecer tu dinero de la mejor forma, mediante un interes a largo plazo tu pequeño
-                                   monto pasara a incrementar.
+                                    <b>MONEYGOALS</b> lleva a cabo sus negocios de mercado en todo el mundo,
+                                    en su negocio de agencia brinda acceso directo a sus clientes 
+                                    (comerciantes, profecionales, etc) a todos nuestros servicios, cuyo objetivo principal es generar 
+                                    rentabilidad y solidez a largo plazo. Pensamos en ti con una inversión mínima puedes optimizar tus ahorros 
+                                    y recibir atractivos rendimientos.
                                 </p>
                             </div>
+
+                            <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="text-center empresa" >Misión</h2>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <p>
+                                Ser el líder en excelencia y calidad del servicio y atención al cliente, mediante un 
+                                acompañamiento personalizado a nuestros inversionistas, con el soporte de herramientas
+                             tecnológicas de alto impacto que agregue valor a la gestión de sus portfolios de inversión.
+                                </p>
+                            </div>
+
+                            
+
+                            
+                            <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="text-center empresa" >Visión</h2>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <p>
+                                Somos una empresa dedicada a la administración de fondos e inversión de forma profesional, 
+                                técnica y responsable, protegiendo el patrimonio de nuestros inversionistas.
+                                </p>
+                            </div>
+
+
                             {{-- <div class="col-md-6 col-sm-12">
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, dignissimos provident corrupti rerum inventore eum perspiciatis alias ea sunt accusantium suscipit neque laborum assumenda veniam? Nulla at exercitationem dicta nihil?
@@ -320,11 +352,46 @@
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12">
                                             <h2 class="compraPlan">Plan Test</h2>
-                                            <h1 class="text-center" >$ 10.00</h1>
+                                            <h1 class="text-center" >$ 50.00</h1>
                                         </div>
                                         <div class="col-md-6 col-sm-12" style="padding-top: 2%; ">
-                                            <p class="descripcionPlan">Con el minimo monto de diez dolares, puedes empezar ahorrar ya no dejes ese dinero tranquilo y mejor ponlo a trabajar</p>
+                                            <p class="descripcionPlan">No necesitas ser un experto para invertir tu dinero
+                                                Invierte desde 50 dolares 
+                                                realizando aportes periodicos.
+                                            </p>
                                             <a class="btn btn-primary boton" href="{{ route('register') }}" >Adquirir Plan</a>
+                                        </div>
+                                    </div>
+                                    <br>
+                               </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="cuadroPlan">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12" style="padding-top: 2% ">
+
+                            </div>
+                            <div class="col-md-6 col-sm-12" style="padding-top: 2% ">
+                               <div class="card card1">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                        <img class="img1" src="{{ URL('img/construccion2.png') }}" alt="">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12" style="padding-top: 2%; ">
+                                        <br>
+                                            <p class="descripcionPlan">Seguimos trabajando para brindarte un servicio de calidad.
+                                                Estamos en la construcción de nuevos planes pensado para ti y al alcance de tu bolsillo.
+                                                
+                                            </p>
+                                            
                                         </div>
                                     </div>
                                     <br>
@@ -347,7 +414,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h2 class="text-center crece" >Nuestros Planes </h2>
-                                <h1 class="text-center "> Money Goals</h1>
+                                <h1 class="text-center "></h1>
                         </div>
                         <hr class="lineas">
                     </div>

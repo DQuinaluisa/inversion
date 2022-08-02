@@ -22,8 +22,8 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-            ['Inversion', 'Al Mes', 'Al Año', 'TOTAL'],
-            ['$10',  3, 36, 46.00],
+            ['Inversión ', 'Al Mes', 'Al Año', 'TOTAL'],
+            ['$50',  6, 60, 74.00],
             // ['$15',  0.75,     5.25, 21.00, 252.00],
             // ['$20',  1,        7.00, 28.00, 336.00],
             // ['$25',  1.25,     8.75, 35.00, 420.00]
@@ -72,10 +72,10 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#plan">Crecer</a>
+              <a class="nav-link" href="#plan">Grow</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#about">Quienes Somos</a>
+                <a class="nav-link" href="#about">About us</a>
               </li>
              <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -135,7 +135,7 @@
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2022 Copyright:
-          <a class="text-white" >  Money Goals</a>
+          <a class="text-white" >Todos los derechos son reservados MoneyGoals</a>
         </div>
         <!-- Copyright -->
       </footer>

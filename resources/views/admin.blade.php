@@ -9,7 +9,7 @@
                 <div class="col-md-12">
                     <div class="col-md-12">
                         <h2 class="text-center crece" >Miembros Registrados </h2>
-                            <h1 class="text-center " >Money Goals
+                            <h1 class="text-center " >MoneyGoals
                             </h1>
 
                     </div>

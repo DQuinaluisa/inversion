@@ -31,9 +31,9 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 "  >
                     <h2 class="text-center" >Bienvenido {{ Auth::user()->name }},</h2>
-                        <h3 class="text-center"> Ya es hora de empezar a construir tus metas</h3>
+                        <h3 class="text-center"> Ya es hora de empezar a construir tus metas!!!</h3>
                     <p class="text-center"  >
-                        Invierte con nosotros y cumple todos tus sueños
+                    Invierte en los mejores fondos de inversión y cumple todos tus sueños.
                     </p>
                 </div>
 
@@ -80,11 +80,11 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="card">
                         <h2 class="text-center" style="padding-top: 5%" >Plan Test</h2>
-                        <h2 class="text-center" style="padding-top: 5%;"   >$10.00</h2>
+                        <h2 class="text-center" style="padding-top: 5%;"   >$50.00</h2>
                         <br>
-                        <p class="text-center" style="margin: 5%">Con el minimo monto de diez dolares, puedes empezar ahorrar ya no dejes ese dinero tranquilo y mejor ponlo a trabajar</p>
-
-                            {{-- <h2 for="product-1" class="text-center"> $10.00</h2>
+                        <p class="text-center" style="margin: 5%">No necesitas ser un experto para invertir tu dinero
+                                                Invierte desde 50 dolares realizando aportes periodicos.
+                    </p>                    {{-- <h2 for="product-1" class="text-center"> $50.00</h2>
                             <button type="submit" class="btn btn-primary"
                             id="product-1" name="product"
                             onclick="handleClick(this)"

@@ -44,7 +44,7 @@
     <div class="container-fluid ">
         <div class="row">
             <div class="col-md-6 col-sm-12">
-                <h2 class="text-center" style="padding-top: 2%">Ya es hora de empezar a construir tus metas</h2>
+                <h2 class="text-center" style="padding-top: 2%">Ya es hora de empezar a construir tus metas!!!</h2>
 
             </div>
             <div class="col-md-6 col-sm-12  float-left" >
@@ -103,9 +103,12 @@
 
                         <div class="card">
                             <h2 class="text-center" style="padding-top: 5%" >Plan Test</h2>
-                            <h2 class="text-center" style="padding-top: 5%;"   >$10.00</h2>
+                            <h2 class="text-center" style="padding-top: 5%;"   >$50.00</h2>
                             <br>
-                            <p class="text-center" style="margin: 5%">Con el minimo monto de diez dolares, puedes empezar ahorrar ya no dejes ese dinero tranquilo y mejor ponlo a trabajar</p>
+                            <p class="text-center" style="margin: 5%">
+                            No necesitas ser un experto para invertir tu dinero
+                            Invierte desde 50 dolares realizando aportes periodicos.
+                        </p>
 
 
 
