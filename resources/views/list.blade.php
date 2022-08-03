@@ -25,15 +25,29 @@
             </div>
         </div>
 
-        @if (session('success'))
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-          {{ session('success') }}
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-6">
+                    @if (session('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                      {{ session('success') }}
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+
+                    @endif
+                </div>
+                <div class="col-md-3">
+
+                </div>
+            </div>
         </div>
-        </div>
-        @endif
+
+
 
         <div class="container-fluid" style="padding-top: 1%;" >
             <div class="row">
