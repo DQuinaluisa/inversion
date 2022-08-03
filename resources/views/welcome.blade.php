@@ -355,9 +355,9 @@
                                             <h1 class="text-center" >$ 50.00</h1>
                                         </div>
                                         <div class="col-md-6 col-sm-12" style="padding-top: 2%; ">
-                                            <p class="descripcionPlan">No necesitas ser un experto para invertir tu dinero
-                                                Invierte desde 50 dolares 
-                                                realizando aportes periodicos.
+                                            <p class="descripcionPlan"> No necesitas ser un experto para invertir tu dinero
+                                              Invierte desde 50 dolares realizando aportes periodicos
+                                               y obtendras grandes beneficios.
                                             </p>
                                             <a class="btn btn-primary boton" href="{{ route('register') }}" >Adquirir Plan</a>
                                         </div>

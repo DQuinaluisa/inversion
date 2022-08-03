@@ -44,7 +44,7 @@
     <div class="container-fluid ">
         <div class="row">
             <div class="col-md-6 col-sm-12">
-                <h2 class="text-center" style="padding-top: 2%">Ya es hora de empezar a construir tus metas!!!</h2>
+                <h2 class="text-center" style="padding-top: 2%">Es hora de empezar a construir tus metas!!!</h2>
 
             </div>
             <div class="col-md-6 col-sm-12  float-left" >
@@ -107,7 +107,8 @@
                             <br>
                             <p class="text-center" style="margin: 5%">
                             No necesitas ser un experto para invertir tu dinero
-                            Invierte desde 50 dolares realizando aportes periodicos.
+                            Invierte desde 50 dolares realizando aportes periodicos
+                            y obtendras grandes beneficios.
                         </p>
 
 

@@ -82,9 +82,11 @@
                         <h2 class="text-center" style="padding-top: 5%" >Plan Test</h2>
                         <h2 class="text-center" style="padding-top: 5%;"   >$50.00</h2>
                         <br>
-                        <p class="text-center" style="margin: 5%">No necesitas ser un experto para invertir tu dinero
-                                                Invierte desde 50 dolares realizando aportes periodicos.
-                    </p>                    {{-- <h2 for="product-1" class="text-center"> $50.00</h2>
+                        <p class="text-center" style="margin: 5%"> No necesitas ser un experto para invertir tu dinero
+                            Invierte desde 50 dolares realizando aportes periodicos
+                            y obtendras grandes beneficios.
+                         </p>       
+                             {{-- <h2 for="product-1" class="text-center"> $50.00</h2>
                             <button type="submit" class="btn btn-primary"
                             id="product-1" name="product"
                             onclick="handleClick(this)"

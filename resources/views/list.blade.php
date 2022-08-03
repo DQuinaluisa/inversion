@@ -16,7 +16,7 @@
                 <div class="col-md-12">
                     <div class="col-md-12">
                         <h2 class="text-center crece" >Pendientes de Pago</h2>
-                            <h1 class="text-center " >Money Goals
+                            <h1 class="text-center " ><b>MoneyGoals</b>
 
 
                     </div>
