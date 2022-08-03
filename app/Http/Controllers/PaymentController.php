@@ -42,7 +42,7 @@ class PaymentController extends Controller
 
 
         $amount = new Amount();
-        $amount->setTotal('10.00');
+        $amount->setTotal('50.00');
         $amount->setCurrency('USD');
 
 
@@ -98,7 +98,7 @@ class PaymentController extends Controller
 
         if ($result->getState() === 'approved') {
             $order =  Order::create([
-                'price' =>  '10.00',
+                'price' =>  '50.00',
                 'description' => 'Plan1',
                 'status' => 'COMPLETED',
                 'reference_number' => $paymentId,
